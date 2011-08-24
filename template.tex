@@ -31,26 +31,27 @@
 % document text down past the bottom of the header so that the document
 % text doesn't overlap with the CCSS logo.  Found at:
 %   https://secure.wikimedia.org/wikibooks/en/wiki/LaTeX/Page_Layout#Customising_with_fancyhdr
-\setlength{\headheight}{48.0pt}
+\setlength{\headheight}{67.0pt}
 
 % CCSS logo, note: L = left, E = even, O = odd
-\fancyhead[LE,LO]{\includegraphics{ccss_logo.pdf} }%
+\fancyhead[L]{\includegraphics{ccss_logo.pdf} }
 
 % CCSS address
-\fancyhead[RE,RO]{Carleton Computer Science Society\\
+\fancyhead[R]{Carleton Computer Science Society\\
 c/o School of Computer Science\\
 1125 Colonel By Drive\\
 Ottawa, Ontario\\
 K1S 5B6}%
 
 \renewcommand{\footrulewidth}{0.4pt}
-\fancyfoot[CE,CO]{email: president@ccss.carleton.ca  | 
-phone: 613.520.2600 ext. 4412}
+\fancyfoot[C]{ - }
+
+\newcommand{\email}[1] {\fancyfoot[L]{email: {#1} } }
+
+\newcommand{\phone}[1] {\fancyfoot[R]{phone: {#1} } }
 
 \begin{document}         
-% Start your text
 
 \include{letter}
 
-% Stop your text
 \end{document}
