@@ -2,7 +2,7 @@
 % CCSS Document Template                                             %
 % Written By: Simon Pratt                                            %
 % Based on the letterhead by: Justin Campbell                        %
-% Version 0.1                                                        %
+% Version 1.0                                                        %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[11pt]{article}
 
@@ -43,15 +43,16 @@ c/o School of Computer Science\\
 Ottawa, Ontario\\
 K1S 5B6}%
 
+% footer
 \renewcommand{\footrulewidth}{0.4pt}
 \fancyfoot[C]{ - }
 
+% Custom commands for adding personal contact information in footer, from:
+% http://en.wikibooks.org/wiki/LaTeX/Customizing_LaTeX#New_commands
 \newcommand{\email}[1] {\fancyfoot[L]{email: {#1} } }
-
 \newcommand{\phone}[1] {\fancyfoot[R]{phone: {#1} } }
 
+% Document structure
 \begin{document}         
-
 \include{letter}
-
 \end{document}
