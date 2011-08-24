@@ -1,3 +1,16 @@
 A letterhead for the Carleton Computer Science Society in TeX.
 
 Authors: Simon Pratt
+
+Instructions:
+
+ 1. get a copy of this repository
+
+    git clone git://github.com/spratt/CCSS-Document-Letterhead.git
+
+ 2. modify letter.tex, including your personal contact information and
+    the contents of the letter to send
+    
+ 3. run `make` in directory with Makefile
+ 
+ 4. distribute/print letter.pdf

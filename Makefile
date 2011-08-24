@@ -1,8 +1,8 @@
-all:	template.pdf
-	open template.pdf
+all:	letter.pdf
+	open letter.pdf
 
-template.pdf:	template.tex
-	pdflatex template.tex
+letter.pdf:	template.tex
+	pdflatex template.tex && mv template.pdf letter.pdf
 
 clean:
-	rm -f *.log *.aux *.dvi template.pdf
+	rm -f *.log *.aux *.dvi letter.pdf
