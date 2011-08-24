@@ -11,7 +11,7 @@
 \usepackage[pdftex]{graphicx}    % needed for including graphics e.g. EPS, PS
 
 % Document properties
-\topmargin 1.5cm         % read Lamport p.163
+\topmargin -1.5cm        % read Lamport p.163
 \oddsidemargin -0.04cm   % read Lamport p.163
 \evensidemargin -0.04cm  % same as oddsidemargin but for left-hand pages
 \textwidth 16.59cm
@@ -27,15 +27,20 @@
 \fancyhead{}             % clear header
 \fancyfoot{}             % clear footer
 
+% sets the size of the header to 48 points, which effectively pushes the
+% document text down past the bottom of the header so that the document
+% text doesn't overlap with the CCSS logo
+\setlength{\headheight}{48.0pt}
+
 % CCSS logo, note: L = left, E = even, O = odd
-\fancyhead[LE,LO]{\includegraphics{ccss_logo.pdf} }
+\fancyhead[LE,LO]{\includegraphics{ccss_logo.pdf} }%
 
 % CCSS address
 \fancyhead[RE,RO]{Carleton Computer Science Society\\
 c/o School of Computer Science\\
 1125 Colonel By Drive\\
 Ottawa, Ontario\\
-K1S 5B6}
+K1S 5B6}%
 
 \renewcommand{\footrulewidth}{0.4pt}
 \fancyfoot[CE,CO]{email: president@ccss.carleton.ca  | 
